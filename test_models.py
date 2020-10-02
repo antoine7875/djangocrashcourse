@@ -27,3 +27,5 @@ class PtsPhy(models.Model):
 
 class TypePoints(models.Model):
     content = models.TextField()
+
+zizi
