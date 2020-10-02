@@ -4,8 +4,7 @@ from django import forms
 
 class LoginForm(forms.Form):
   email = forms.EmailField(label='Courriel :')
-  password = forms.CharField(label='Mot de passe :', 
-                             widget = forms.PasswordInput)
+  password = forms.CharField(label='Mot de passe :', widget = forms.PasswordInput)
   def clean(self):
     cleaned_data = super(LoginForm, self).clean()
     email = cleaned_data.get("email")

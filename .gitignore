@@ -1,11 +1,9 @@
 /env
 /todo
-ant1/__pycache__/forms.cpython-36.pyc
 /ant1/migrations
 /ant1/__pycache__
+ant1/__init__.py
 /ant1/static/img
 /crashcourse/__pycache__
-*.sqlite3
-.gitignore
-ant1/__init__.py
 crashcourse/__init__.py
+*.sqlite3
