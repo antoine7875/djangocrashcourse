@@ -7,3 +7,5 @@ ant1/__init__.py
 /crashcourse/__pycache__
 crashcourse/__init__.py
 *.sqlite3
+test_models.
+essai.sh
