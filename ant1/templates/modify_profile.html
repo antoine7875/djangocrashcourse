@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Modification d'un profil{% endblock %}
+{% block contenu %}
+  <h5>Modification de mon profil</h5>
+    <form action="modify_profile" method="POST">
+      {% csrf_token %}
+      {{ form.as_p}}
+        <p>
+          <input type="submit" value="Modifier" />
+        </p>
+    </form>
+{% endblock  %}

@@ -28,9 +28,13 @@
             </a>
             <ul class="right hide-on-med-and-down">
               <li><a href="welcome">Accueil</a></li>
-              <li>
-                <a href="login" class="btn white indigo-text">Se connecter</a>
-              </li>
+              {% if logged_user %}
+                <li><a href="modify_profile">{{ logged_user.prenom }}</a></li>
+                <li><a href="option1">Option1</a></li>
+                <li><a href="logout" class="btn white indigo-text">Se déconnecter</a></li>
+              {% else %}
+                <li><a href="login" class="btn white indigo-text">Se connecter</a></li>
+              {% endif %}
             </ul>
           </div>
         </nav>

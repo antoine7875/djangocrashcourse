@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Création d'un profil{% endblock %}
+{% block contenu %}
+  <h5>Création d'un compte</h5>
+    <form action="register" method="POST">
+      {% csrf_token %}
+      {{ form.as_p}}
+        <p>
+          <input type="submit" value="Créer un compte" />
+        </p>
+    </form>
+{% endblock  %}
